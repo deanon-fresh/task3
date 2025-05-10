@@ -2,7 +2,7 @@ import ru.netology.service.CustomService;
 import java.util.Scanner;
 
 public class Main {
-public static int sum1;
+
 
     //выполнение 1 задания
     /*public static int result;
@@ -12,7 +12,7 @@ public static int sum1;
         return result;
     } */
 
-    public static void main(String[] args) {
+    public static void main(String[] SUM2) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите цену товара (в руб.) ");
         int price = scanner.nextInt();
@@ -24,6 +24,6 @@ public static int sum1;
         //System.out.println("Размер пошлины в руб. составит " + result + " руб.");
 
         CustomService.calculation(price, weight);
-        System.out.println("Размер пошлины в руб. составит " + sum1 + " руб.");
+        System.out.println("Размер пошлины в руб. составит " + SUM2 + " руб.");
     }
 }
