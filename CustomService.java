@@ -1,10 +1,10 @@
 package ru.netology.service;
-
-
 public class CustomService {
+final static double TAX_FOR_PRICE = 0.01;
+final static int TAX_FOR_WEIGHT = 100;
 
     public  static int calculation(int price, int weight) {
-        final int SUM2 = price/100 + weight*100;
-        return SUM2;
+        int sum = (int) (price*TAX_FOR_PRICE + weight*TAX_FOR_WEIGHT);
+        return sum;
     }
 }
